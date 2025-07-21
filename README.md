@@ -35,16 +35,18 @@ Para efeito de análise, elas foram feitas em cima das razões(*ex. gols por par
 
 | Time |  P x J  | P |Posição| J  | V  | E  |  D |Temporada| |  Time  | P x J | P |Posição| J  | V  |  E |  D |Temporada |
 |------|---------|---|-------|----|----|----|----|---------|-|--------|-------|---|-------|----|----|----|----|----------|
-| Flamengo  |2.37| 90|   1   | 38 | 28 | 6  | 4  |  2019   | |Chapecoense|0.39| 15|   20  | 38 | 1  | 12 | 25 |   2021   |
-|Atlético-MG|2.21| 84|   1   | 38 | 26 | 6  | 6  |  2021   | |Avaí       |0.45| 17|   20  | 38 | 4  |  5 | 29 |   2007   |
-| Cruzeiro  |2.17|100|   1   | 46 | 31 | 7  | 8  |  2003   | |Juventude  |0.53| 20|   20  | 38 | 5  |  5 | 28 |   2013   |
+| Flamengo  |2.37| 90|   1   | 38 | 28 |  6 | 4  |  2019   | |Chapecoense|0.39| 15|   20  | 38 | 1  | 12 | 25 |   2021   |
+|Atlético-MG|2.21| 84|   1   | 38 | 26 |  6 | 6  |  2021   | |América-RN |0.45| 17|   20  | 38 | 4  |  5 | 29 |   2007   |
+| Cruzeiro  |2.17|100|   1   | 46 | 31 |  7 | 8  |  2003   | |Avaí       |0.53| 20|   20  | 38 | 3  | 11 | 24 |   2019   |
+|Corinthians|2.13| 81|   1   | 38 | 24 |  9 | 5  |  2015   | |Náutico    |0.53| 20|   20  | 38 | 5  |  5 | 28 |   2013   |
+|Palmeiras  |2.13| 81|   1   | 38 | 23 | 12 | 3  |  2022   | |Juventude  |0.58| 22|   20  | 38 | 3  | 13 | 22 |   2022   |
 
 * **Número de gols ( GF x J) em uma temporada:**  
 
 | Time  | Maior nº GF  |Posição|  J  | GF x J |Temporada | | Time |Menor nº GF|Posição|  J  | GF x J |Temporada |
 |-------|--------------|-------|-----|--------|----------|-|------|-----------|-------|-----|--------|----------|
-|Flamengo|      86     |   1   |  38 |  2.26  |   2019   | |Paraná |   18     |   20  | 38  |  0.47  |   2018   |
-|Santos  |     103     |   1   |  46 |  2.24  |   2004   | |Avaí   |   18     |   20  | 38  |  0.47  |   2019   |
+|Flamengo|      86     |   1   |  38 |  2.26  |   2019   | |Avaí   |   18     |   20  | 38  |  0.47  |   2019   |
+|Santos  |     103     |   1   |  46 |  2.24  |   2004   | |Paraná |   18     |   20  | 38  |  0.47  |   2018   |
 |Cruzeiro|     102     |   1   |  46 |  2.22  |   2003   | |Náutico|   22     |   20  | 38  |  0.58  |   2013   |
 
 * **Número de gols sofridos ( GS x J) em uma temporada:**  
@@ -60,14 +62,14 @@ Com excessão do *número de gols sofridos*, por se tratar da razão por jogos, 
 Enquanto os números de gols sofridos positivos não necessariamente refletem a posição que o time ficou no campeonato, como **Corinthians** e **Grêmio**, que ficaram em **10º** e **7º**, respectivamente. Enquanto **Cruzeiro** que venceu os dois anos ficou com **37** e **38** gols sofridos, respectivamente.
 
 ### Ciclo
-Considerando que para entrar, precisa ter participado de pelo menos 2 temporadas, considerando que o time pode com recordes negativos pode ter sofrido rebaixamento e voltado na temporada seguinte.
+Considerando que para entrar, precisa ter participado de pelo menos 2 temporadas, considerando que o time com recordes negativos pode ter sofrido rebaixamento e voltado na temporada seguinte.
 * **Aproveitamentos em um ciclo completo:**
 
 | Time | Aproveit. |  J  |  V  |  E  |  D  |  Ciclo   | | Time | Aproveit. |  J  |  V  |  E  |  D  |  Ciclo   |
 |------|-----------|-----|-----|-----|-----|----------|-|------|-----------|-----|-----|-----|-----|----------|
-| Flamengo | 64.47%| 152 | 88  | 30  | 34  |2019-2022 | |Chapecoense|20.61%|  76 |  8  | 23  | 45  |2019-2022 |
-| Flamengo | 64.47%| 152 | 88  | 30  | 34  |2019-2022 | |Avaí       |24.12%|  76 | 12  | 19  | 45  |2019-2022 |
-| Flamengo | 64.47%| 152 | 88  | 30  | 34  |2019-2022 | |América-MG |29.82%|  76 | 17  | 17  | 42  |2015-2018 |
+|Flamengo  | 64.47%| 152 | 88  | 30  | 34  |2019-2022 | |Chapecoense|20.61%|  76 |  8  | 23  | 45  |2019-2022 |
+|Palmeiras | 61.18%| 152 | 79  | 42  | 31  |2019-2022 | |Avaí       |24.12%|  76 | 12  | 19  | 45  |2019-2022 |
+|Palmeiras | 60.53%| 152 | 81  | 33  | 38  |2015-2018 | |América-MG |29.82%|  76 | 17  | 17  | 42  |2015-2018 |
 
 * **Número de pontos em um ciclo completo:**
 
@@ -76,6 +78,7 @@ Considerando que para entrar, precisa ter participado de pelo menos 2 temporadas
 |Flamengo |1.93|294| 152 | 88  | 30  | 34  |2019-2022 | |Chapecoense|0.62| 47|  76 |  8  | 23  | 45  |2019-2022 |
 |Palmeiras|1.84|279| 152 | 79  | 42  | 31  |2019-2022 | |Avaí       |0.72| 55|  76 | 12  | 19  | 45  |2019-2022 |
 |Palmeiras|1.82|276| 152 | 81  | 33  | 38  |2015-2019 | |Juventude  |0.89| 68|  76 | 14  | 26  | 36  |2019-2022 |
+|São Paulo|1.79|272| 152 | 77  | 41  | 34  |2007-2010 | |América-MG |0.89| 68|  76 | 17  | 17  | 42  |2015-2018 |
 
 * **Número de gols em um ciclo completo:**  
 
@@ -92,31 +95,45 @@ Considerando que para entrar, precisa ter participado de pelo menos 2 temporadas
 | Corinthians |  128 | 152 |  0.84  |2011-2014 | |Paysandu   |    245      | 134 |  1.83  |2003-2006 |
 | Corinthians |  138 | 152 |  0.91  |2015-2018 | |Nautico    |    130      |  76 |  1.71  |2011-2014 |
 | Palmeiras   |  139 | 152 |  0.91  |2019-2022 | |Figueirense|    129      |  76 |  1.70  |2007-2010 |
+| Grêmio      |  139 | 152 |  0.91  |2015-2018 | |Ponte Preta|    291      | 172 |  1.69  |2003-2006 |
 
 ### Geral
+#### Dados tirados com times que tiveram ao menos 3 participações
 * Maior aproveitamento geral:
 
-| Time |Maior Aproveit.|Qtde Jogos| | Time |Menor Aproveit.|Qtde Jogos|
-|------|---------------|----------|-|------|---------------|----------|
-|  Palmeiras  | 53.97% |    772   | |  Avaí  |    33.96%   |   266    |
+| Time | Aproveit. | P  |  J  | V  | E  | D  |Participações| | Time | Aproveit. |  P  |  J  | V  | E  | D  |Participações|
+|------|-----------|----|-----|----|----|----|-------------|-|------|-----------|-----|-----|----|----|----|-------------|
+|Palmeiras | 53.97%|1250| 772 | 351| 197| 224|  20 Tempor. | |Avaí       |33.96%| 271 | 266 | 66 | 73 |127 |   7 Tempor. |
+|São Paulo | 53.86%|1383| 856 | 382| 237| 237|  22 Tempor. | |América-MG |34.36%| 235 | 228 | 58 | 61 |109 |   7 Tempor. |
+|Flamengo  | 52.53%|1349| 856 | 374| 231| 251|  22 Tempor. | |Náutico    |35.09%| 200 | 190 | 54 | 38 | 98 |   6 Tempor. |
 
 * Maior número de pontos geral:  
 
-| Time |Maior nº Pontos|Qtde Jogos| | Time |Menor nº Pontos|Qtde Jogos|
-|------|---------------|----------|-|------|---------------|----------|
-|  São Paulo  |  1383  |    856   | |  Paysandu  |   146   |   134    |
+| Time        |P x J| P  | J |V  |E  |D  |Participações| | Time      |P x J| P  | J |V  |E  |D  |Participações|
+|-------------|-----|----|---|---|---|---|-------------|-|-----------|-----|----|---|---|---|---|-------------|
+|São Paulo    | 1.61|1383|856|382|237|237|  22 Tempor. | |Paysandu   | 1.09| 146|134| 41| 31| 62|   3 Tempor. |
+|Flamengo     | 1.58|1349|856|374|231|251|  22 Tempor. | |Guarani    | 1.12| 147|130| 36| 39| 55|   3 Tempor. |
+|Internacional| 1.58|1286|818|357|213|248|  21 Tempor. | |Cuiabá     | 1.11| 169|152| 40| 49| 63|   4 Tempor. |
 
 * Maior número de gols geral:  
 
-| Time |Maior nº GF| Time |Menor nº GF|
-|------|-----------|------|-----------|
-| Time |Maior nº GF| Time |Menor nº GF|
+|   Time    |Maior nº GF|  J  | GF x J |Participações| |   Time    | Menor nº GF |  J  | GF x J |Participações|
+|-----------|-----------|-----|--------|-------------|-|-----------|-------------|-----|--------|-------------|
+|Flamengo   |   1230    | 856 |  1.44  |  22 Tempor. | |Cuiabá     |     134     | 152 |  0.88  |   4 Tempor. |
+|São Paulo  |   1216    | 856 |  1.41  |  22 Tempor. | |Guarani    |     140     | 130 |  1.06  |   3 Tempor. |
+|Atlético-MG|   1178    | 818 |  1.44  |  21 Tempor. | |Paysandu   |     193     | 134 |  1.44  |   3 Tempor. |
+|Santos     |   1178    | 818 |  1.43  |  21 Tempor. | |São Caetano|     209     | 172 |  1.20  |   4 Tempor. |
 
-* Menor número de gols sofridos geral: 
+* Menor número de gols sofridos(GS por J) geral: 
 
-| Time |Menor GS| Time |Maior GS|
-|------|--------|------|--------|
-| Time |Menor GS| Time |Maior GS|
+|   Time      |Menor nº GS|  J  | GS x J |Participações| |   Time   | Maior nº GF |  J  | GS x J |Participações|
+|-------------|-----------|-----|--------|-------------|-|----------|-------------|-----|--------|-------------|
+|São paulo    |    922    | 856 |  1.07  |  22 Tempor. | |Paysandu  |     245     | 134 |  1.84  |   4 Tempor. |
+|Corinthians  |    877    | 818 |  1.07  |  21 Tempor. | |Náutico   |     318     | 190 |  1.67  |   5 Tempor. |
+|Internacional|    889    | 818 |  1.08  |  21 Tempor. | |Criciúma  |     327     | 206 |  1.59  |   5 Tempor. |
+|Santos       |    167    | 152 |  1.10  |   4 Tempor. | |Avaí      |     415     | 266 |  1.56  |   7 Tempor. |
+
+#### Dados com times que tiveram ao menos 15 participações(+-70% das temporadas)
 
 ## Correlações
 Aproveitamento vs. gols marcados/sofridos.
