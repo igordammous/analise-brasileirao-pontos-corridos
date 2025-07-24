@@ -277,68 +277,28 @@ drop_columns = ["Total de Empates", "Total de Derrotas", "Saldo de Gols",
                 "Média de Gols Sofridos por Jogo"]
 df_ranking = df_ranking.drop(drop_columns, axis=1)
 df_ranking
-
-# %% visualização dos maiores pontuadores
-plt.figure(figsize=(20, 12))
-sns.barplot(x=stats_gerais.index, y=stats_gerais["points"], width=0.6)
-plt.suptitle("Maiores Pontuadores do Brasileirão (2003-2024)", fontsize=20)
-plt.title("Times que jogaram ao menos 3 temporadas", fontsize=18)
-plt.xlabel("Times", fontsize=16)
-plt.ylabel("Pontos", fontsize=16)
-plt.bar_label(plt.gca().containers[0], fontsize=14, rotation=45)
-plt.xticks(rotation=90, fontsize = 14)
-plt.yticks(fontsize = 14)
-plt.show()
 # %%
-plt.figure(figsize=(20, 12))
-sns.barplot(x=maior_aproveit_geral["team"], y=maior_aproveit_geral["percentage"], width=0.6)
-plt.suptitle("Maiores Aproveitamentos do Brasileirão (2003-2024)", fontsize=20)
-plt.title("Times que jogaram ao menos 3 temporadas", fontsize=18)
-plt.xlabel("Times", fontsize=16)
-plt.ylabel("Aproveitamento (%)", fontsize=16)
-plt.bar_label(plt.gca().containers[0], fontsize=14)
-plt.xticks(rotation=30, fontsize=14)
-plt.yticks(fontsize=14)
+md_df_ranking = df_ranking.to_markdown()
+print(md_df_ranking)
 
-plt.show()
-
-# %% visualização dos melhores ciclos (4 anos) por aproveitamento
-plt.figure(figsize=(20, 12))
-ax = sns.barplot(x=maior_aproveit_ciclo["ciclo"], y=maior_aproveit_ciclo["percentage"], hue=maior_aproveit_ciclo["team"], dodge=True)
-plt.suptitle("Melhores Ciclos(4 anos) do Brasileirão (2003-2024)", fontsize=20)
-plt.title("Top 10 Times, Ciclos com Melhor Aproveitamento", fontsize=18)
-plt.xlabel("Ciclos", fontsize=16)
-plt.ylabel("Aproveitamento (%)", fontsize=16)
-
-# Adiciona o valor da porcentagem em cima de cada barra
-for container in ax.containers:
-    plt.bar_label(container, labels=[f"{v:.2f}%" for v in container.datavalues], fontsize=14, rotation=60)
-
-plt.xticks(fontsize=14)
-plt.yticks(fontsize=14)
-plt.legend(title="Times", fontsize=14, title_fontsize=16, loc="lower center")
-plt.show()
-# %%
 df_brasileirao_ciclo_geral = (df_brasileirao_ciclo.sort_values(by="percentage", ascending=False)
                                                   .reset_index(drop=True)
                                                   .query("percentage >= 55")
                                                   .copy())
-# %%
-plt.figure(figsize=(20, 15), dpi = 400)
-ax = sns.barplot(y=df_brasileirao_ciclo_geral["ciclo"], x=df_brasileirao_ciclo_geral["percentage"], hue=df_brasileirao_ciclo_geral["team"], dodge=True)
-plt.suptitle("Melhores Ciclos(4 anos) do Brasileirão (2003-2024)", fontsize=20)
-plt.title("Top 10 Times, Ciclos com Melhor Aproveitamento", fontsize=18)
-plt.ylabel("Ciclos", fontsize=16)
-plt.xlabel("Aproveitamento (%)", fontsize=16)
 
-# Adiciona o valor da porcentagem em cima de cada barra
-for container in ax.containers:
-    plt.bar_label(container, labels=[f"{v:.2f}%" for v in container.datavalues], fontsize=14)
-
-plt.xticks(fontsize=14)
-plt.yticks(fontsize=14)
-plt.legend(title="Times", fontsize=14, title_fontsize=16, loc="lower left")
-plt.show()
 # %%
-stats_gerais
+times_top_5 = df_ranking["Time"].head(5)
+
+# %%
+df_brasileirao_top_5 = df_brasileirao[df_brasileirao["team"].isin(times_top_5)].copy()
+# %%
+decada_2000 = df_brasileirao_top_5[df_brasileirao_top_5["season"].between(2003, 2009)]
+decada_2010 = df_brasileirao_top_5[df_brasileirao_top_5["season"].between(2010, 2019)]
+decada_2020 = df_brasileirao_top_5[df_brasileirao_top_5["season"].between(2020, 2024)]
+
+
+# %%
+decada_2000
+# %%
+decada_2010
 # %%
