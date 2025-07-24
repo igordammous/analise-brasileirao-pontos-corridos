@@ -296,9 +296,24 @@ decada_2000 = df_brasileirao_top_5[df_brasileirao_top_5["season"].between(2003, 
 decada_2010 = df_brasileirao_top_5[df_brasileirao_top_5["season"].between(2010, 2019)]
 decada_2020 = df_brasileirao_top_5[df_brasileirao_top_5["season"].between(2020, 2024)]
 
-
+df_brasileirao_top_3 = df_brasileirao_top_5[df_brasileirao_top_5["team"].isin(["São Paulo","Flamengo","Palmeiras"])].copy()
 # %%
-decada_2000
+desempenho_sp = df_brasileirao_top_5[df_brasileirao_top_5["team"] == "São Paulo"].copy().reset_index(drop=True)
+desempenho_fla = df_brasileirao_top_5[df_brasileirao_top_5["team"] == "Flamengo"].copy().reset_index(drop=True)
+desempenho_pal = df_brasileirao_top_5[df_brasileirao_top_5["team"] == "Palmeiras"].copy().reset_index(drop=True)
 # %%
-decada_2010
+media_colocacao = df_brasileirao_top_3.groupby("team")["place"].mean().reset_index()
+mediana_colocacao = df_brasileirao_top_3.groupby("team")["place"].median().reset_index()
+moda_colocacao = df_brasileirao_top_3.groupby("team")["place"].agg(lambda x: x.value_counts().index[0]).reset_index()
+desvio_padrao_colocacao = df_brasileirao_top_3.groupby("team")["place"].std().reset_index()
+top_3_stats = media_colocacao.merge(mediana_colocacao, on="team", suffixes=("_media", "_mediana")).merge(moda_colocacao, on="team").merge(desvio_padrao_colocacao, on="team")
+# %%
+top_3_stats.rename(columns={"place_x": "Moda(Colocação)", "place_media": "Média(Colocação)", "place_mediana": "Mediana(Colocação)", "place_y": "Desvio Padrão(Colocação)", "team": "Time"}, inplace=True)
+# %%
+top_3_stats["Média(Colocação)"] = top_3_stats["Média(Colocação)"].round(2)
+top_3_stats["Desvio Padrão(Colocação)"] = top_3_stats["Desvio Padrão(Colocação)"].round(2)
+# %%
+top_3_stats.to_markdown(index=False)
+# %%
+desempenho_fla
 # %%

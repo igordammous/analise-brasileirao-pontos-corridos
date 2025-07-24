@@ -154,6 +154,20 @@ Considerando que para entrar, precisa ter participado de pelo menos 2 temporadas
 Considerando os times que mais jogaram a primeira divisão do campeonato braseileiro, na era dos pontos corridos, o **São Paulo** é o time que se mantém entre os melhores nas principais estatísticas no decorrer das 22 temporadas consideradas. E isso se torna ainda mais significativo vendo a última temporada em que ficou em **1º lugar** foi no ano de **2008**.
 
 E entre os resultados negativos, o **Vasco** se mantém em último em todas as estatísticas entre os 13 times, mostrando que pode haver correlação com a quantidade de rebaixamentos(*2008, 2013, 2015, 2020*) e a posição média de suas estátisticas. Assim como seu destacamento da posição média entre todos os anos que participou em relação aos outros 12 times, de acordo com o *Gráfico 1*
+
+#### Dados Flamengo, São Paulo e Palmeiras
+
+| Time      |   Média(Colocação) |   Mediana(Colocação) |   Moda(Colocação) |   Desvio Padrão(Colocação) |
+|:----------|-------------------:|---------------------:|------------------:|---------------------------:|
+| Flamengo  |               7    |                  5   |        1 e 3 (3x) |                       5.32 |
+| Palmeiras |               6.25 |                  4   |        1 (4x)     |                       5.42 |
+| São Paulo |               6.09 |                  5.5 |        1 e 3 (3x) |                       3.91 |
+
+Podemos concluir que o time mais consistente entre os 3 é o **São Paulo**, porém o **Palmeiras** se mostra um time que mesmo não tendo a regularidade do São Paulo, se mantém em melhores colocações.
+
+* **Desvio Padrão** : Indica o quanto a colocação média de cada time variou ao longo das temporadas analisadas.
+* **Mediana** : Representa o valor central de uma distribuição ordenada. No contexto das colocações dos times,, *50%* das vezes ficou acima dessa colocação e *50%* das vezes ficou abaixo.
+
 ## Correlações
 
 Aproveitamento vs. gols marcados/sofridos.
