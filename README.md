@@ -170,7 +170,7 @@ Podemos concluir que o time mais consistente entre os 3 é o **São Paulo**, por
 
 ![Grafico Desempenho top 3](https://github.com/igordammous/analise-brasileirao-pontos-corridos/blob/main/graficos/09_posicoes_3_times_estat_mais_consistentes(2003-2024).png?raw=true "Desempenho São Paulo, Flamengo e Palmeiras - Pontos Corridos")
 
-![Heatmap Aproveitamento top 3](https://github.com/igordammous/analise-brasileirao-pontos-corridos/blob/main/graficos/09_posicoes_3_times_estat_mais_consistentes(2003-2024).png?raw=true "Heatmap São Paulo, Flamengo e Palmeiras - Aproveitamento por Ciclo")
+![Heatmap Aproveitamento top 3](https://github.com/igordammous/analise-brasileirao-pontos-corridos/blob/main/graficos/10_heatmap_aproveitamento_3_times_mais_consistentes(2020-2029).png?raw=true "Heatmap São Paulo, Flamengo e Palmeiras - Aproveitamento por Ciclo")
 Vendo por ciclos de 4 anos, seguindo ciclos de copa do mundo, podemos notar que o **São Paulo** teve um começo da era dos pontos corridos muito consistente, porém depois decaiu no aproveitamento, enquanto **Palmeiras** e **Flamengo** fizeram um caminho inverso.
 ## Correlações
 
