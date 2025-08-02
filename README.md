@@ -166,10 +166,12 @@ E entre os resultados negativos, o **Vasco** se mantém em último em todas as e
 Podemos concluir que o time mais consistente entre os 3 é o **São Paulo**, porém o **Palmeiras** se mostra um time que mesmo não tendo a regularidade do São Paulo, se mantém em melhores colocações.
 
 * **Desvio Padrão** : Indica o quanto a colocação média de cada time variou ao longo das temporadas analisadas.
-* **Mediana** : Representa o valor central de uma distribuição ordenada. No contexto das colocações dos times,, *50%* das vezes ficou acima dessa colocação e *50%* das vezes ficou abaixo.
+* **Mediana** : Representa o valor central de uma distribuição ordenada. No contexto das colocações dos times, *50%* das vezes ficou acima dessa colocação e *50%* das vezes ficou abaixo.
 
-![Grafico Desempenho top 3]()
+![Grafico Desempenho top 3](https://github.com/igordammous/analise-brasileirao-pontos-corridos/blob/main/graficos/09_posicoes_3_times_estat_mais_consistentes(2003-2024).png?raw=true "Desempenho São Paulo, Flamengo e Palmeiras - Pontos Corridos")
 
+![Heatmap Aproveitamento top 3](https://github.com/igordammous/analise-brasileirao-pontos-corridos/blob/main/graficos/09_posicoes_3_times_estat_mais_consistentes(2003-2024).png?raw=true "Heatmap São Paulo, Flamengo e Palmeiras - Aproveitamento por Ciclo")
+Vendo por ciclos de 4 anos, seguindo ciclos de copa do mundo, podemos notar que o **São Paulo** teve um começo da era dos pontos corridos muito consistente, porém depois decaiu no aproveitamento, enquanto **Palmeiras** e **Flamengo** fizeram um caminho inverso.
 ## Correlações
 
 Aproveitamento vs. gols marcados/sofridos.
@@ -192,3 +194,4 @@ Linha do tempo do desempenho dos principais times.
 * Para aprofundar:  
 Você pode criar gráficos de linha para mostrar a evolução do aproveitamento dos principais times ao longo dos ciclos, ou calcular a variância do aproveitamento para medir regularidade. Também pode investigar se há relação entre saldo de gols e classificação final.
 
+* Quantidade de pontos por partida para entrar no G4 e escapar do Z4. Menor pontuação dentro do G4 e maior pontuação dentro do Z4

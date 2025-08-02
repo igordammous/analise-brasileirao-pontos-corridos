@@ -135,8 +135,7 @@ plt.grid(True)
 plt.ylim(20, 0)
 plt.show()
 # %%
-from analise import df_brasileirao_top_3
-
+from analise import df_brasileirao_top_3, heatmap_ciclo
 plt.figure(figsize=(20, 12))
 sns.lineplot(data=df_brasileirao_top_3, x="season", y="place", hue="team", marker="o")
 plt.title("Posições dos 3 Times com estatísticas mais consistentes (2002-2024)", fontsize=24)
@@ -151,4 +150,12 @@ plt.grid(True)
 plt.ylim(20, 0)
 plt.show()
 
+# %%
+plt.figure(figsize=(20, 12))
+sns.heatmap(heatmap_ciclo, annot=True, fmt=".2f", cmap="coolwarm", linewidths=.5, cbar_kws={"shrink": .8})
+plt.suptitle("Heatmap dos 3 Times mais Consistentes na Era dos Pontos corridos", fontsize = 24, x=0.45)
+plt.title("Análise do aproveitamento de cada um por Ciclo(2003-2024)", fontsize=22)
+plt.xticks(rotation=45, fontsize=18)
+plt.yticks(rotation=0, fontsize=18)
+plt.show()
 # %%

@@ -315,7 +315,11 @@ top_3_stats["Desvio Padrão(Colocação)"] = top_3_stats["Desvio Padrão(Coloca�
 # %%
 top_3_stats.to_markdown(index=False)
 # %%
-desempenho_fla
+times = ["São Paulo", "Flamengo", "Palmeiras"]
+df_ciclo_top3 = df_brasileirao_ciclo[df_brasileirao_ciclo["team"].isin(times)]
+
+# Cria a matriz para o heatmap: times x ciclos
+heatmap_ciclo = df_ciclo_top3.pivot(index="team", columns="ciclo", values="percentage")
 # %%
 
 
