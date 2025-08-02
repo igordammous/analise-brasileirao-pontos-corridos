@@ -135,3 +135,20 @@ plt.grid(True)
 plt.ylim(20, 0)
 plt.show()
 # %%
+from analise import df_brasileirao_top_3
+
+plt.figure(figsize=(20, 12))
+sns.lineplot(data=df_brasileirao_top_3, x="season", y="place", hue="team", marker="o")
+plt.title("Posições dos 3 Times com estatísticas mais consistentes (2002-2024)", fontsize=24)
+plt.xlabel("Temporada", fontsize=20)
+plt.ylabel("Posição", fontsize=20)
+x_values = df_brasileirao_top_3["season"].unique()
+plt.xticks(x_values, fontsize=18, rotation=90)
+y_values = sorted(df_brasileirao_top_3["place"].unique())
+plt.yticks(y_values, fontsize=18)
+plt.legend(title="Times", fontsize=18, title_fontsize=22)
+plt.grid(True)
+plt.ylim(20, 0)
+plt.show()
+
+# %%

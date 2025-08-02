@@ -168,6 +168,8 @@ Podemos concluir que o time mais consistente entre os 3 é o **São Paulo**, por
 * **Desvio Padrão** : Indica o quanto a colocação média de cada time variou ao longo das temporadas analisadas.
 * **Mediana** : Representa o valor central de uma distribuição ordenada. No contexto das colocações dos times,, *50%* das vezes ficou acima dessa colocação e *50%* das vezes ficou abaixo.
 
+![Grafico Desempenho top 3]()
+
 ## Correlações
 
 Aproveitamento vs. gols marcados/sofridos.

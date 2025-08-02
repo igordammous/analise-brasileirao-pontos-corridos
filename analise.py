@@ -317,3 +317,5 @@ top_3_stats.to_markdown(index=False)
 # %%
 desempenho_fla
 # %%
+
+
